@@ -27,6 +27,6 @@ Website: https://yscmtcommunity.vercel.app
 EOL
 
 printf '%s\n' '2.1' > /etc/yscmt/version
-printf '%s\n' 'development' > /etc/yscmt/channel
+printf '%s\n' 'stable' > /etc/yscmt/channel
 
 exit 0
