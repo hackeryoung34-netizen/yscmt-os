@@ -1,0 +1,23 @@
+YSCMT OS 2.1
+Codename: Foundation
+Channel: stable
+
+Architecture: amd64
+Desktop: XFCE
+Base: Debian GNU/Linux
+
+Purpose:
+Education, Software Development, Cybersecurity,
+Technology, Open Source
+
+Organization:
+YSCMT Community
+
+Website:
+https://yscmtcommunity.vercel.app
+
+ISO:
+yscmt-os-2.1-amd64.iso
+
+SHA256:
+b1b482542031af23779dd8b1b4a85f8ac209a783270b59451e266b1da7cc56b8  yscmt-os-2.1-amd64.iso
