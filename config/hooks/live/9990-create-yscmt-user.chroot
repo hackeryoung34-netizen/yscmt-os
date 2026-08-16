@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+if ! id yscmt >/dev/null 2>&1; then
+    useradd -m -s /bin/bash yscmt
+fi
+
+usermod -aG sudo,audio,video,plugdev,netdev yscmt
+
+echo 'yscmt ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/yscmt
+chmod 440 /etc/sudoers.d/yscmt
+
+exit 0

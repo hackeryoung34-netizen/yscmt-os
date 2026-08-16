@@ -1,0 +1,32 @@
+#!/bin/sh
+set -e
+
+mkdir -p /etc/yscmt
+
+cat > /etc/os-release <<'EOL'
+PRETTY_NAME="YSCMT OS 2.1"
+NAME="YSCMT OS"
+VERSION_ID="2.1"
+VERSION="2.1 (Foundation)"
+VERSION_CODENAME="foundation"
+ID=yscmt
+ID_LIKE=debian
+HOME_URL="https://yscmtcommunity.vercel.app"
+SUPPORT_URL="https://yscmtcommunity.vercel.app"
+EOL
+
+cat > /etc/yscmt/release <<'EOL'
+YSCMT OS 2.1
+Codename: Foundation
+Architecture: amd64
+Base: Debian GNU/Linux
+Desktop: XFCE
+Purpose: Education, Software Development, Cybersecurity, Technology, Open Source
+Organization: YSCMT Community
+Website: https://yscmtcommunity.vercel.app
+EOL
+
+printf '%s\n' '2.1' > /etc/yscmt/version
+printf '%s\n' 'development' > /etc/yscmt/channel
+
+exit 0
